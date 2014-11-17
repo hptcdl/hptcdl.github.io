@@ -96,18 +96,12 @@
 </tr>
 <tr>
 <td></td>
-<td>Polymorphism in programming languages enables code reuse. Here, we show that</td>
+<td>Polymorphism in programming languages enables code reuse. Here, we show that polymorphism has broad applicability far beyond computations for technical computing: not only can the exact same code can be reused for serial and distributed computing, but code can also be instrumented for visualizing its data flow, and also be used for formal verification of correctness. The ability to reuse a single codebase for all these purposes provides new ways to understand and verify parallel programs.</td>
 </tr>
 </tbody>
 </table>
 
-<p>polymorphism has broad applicability far beyond computations for technical 
-computing: not only can the exact same code can be reused for serial and 
-distributed computing, but code can also be instrumented for visualizing its 
-data flow, and also be used for formal verification of correctness. The 
-ability to reuse a single codebase for all these purposes provides new 
-ways to understand and verify parallel programs. 
-12:00- 1:30 Break</p>
+<p>12:00- 1:30 Break</p>
 
 <table>
 <thead>
@@ -153,72 +147,38 @@ ways to understand and verify parallel programs.
 </tr>
 <tr>
 <td></td>
-<td>This paper describes Convex.jl,</td>
+<td>This paper describes Convex.jl, a convex optimization modeling framework in Julia. Convex.jl translates problems from a user-friendly functional language into an abstract syntax tree describing the problem. This concise representation of the global structure of the problem allows Convex.jl to infer whether the problem complies with the rules of disciplined convex programming (DCP), and to pass the problem to a suitable solver. These operations are carried out in Julia using multiple dispatch, which dramatically reduces the time required to verify DCP compliance and to parse a problem into conic form.</td>
+</tr>
+<tr>
+<td>4:00- 4:30</td>
+<td>Joey Huchette, <strong>Miles Lubin</strong> and Cosmin Petra: Parallel algebraic modeling for stochastic optimization (<a href="http://www.mcs.anl.gov/publication/parallel-algebraic-modeling-stochastic-optimization">ANL/MCS-P5181-0814</a>)</td>
+</tr>
+<tr>
+<td></td>
+<td>We present scalable algebraic modeling software, \verb</td>
+</tr>
+<tr>
+<td>4:30- 5:00</td>
+<td>
+<strong>Clemens Heitzinger</strong> and Gerhard Tulzer: Julia and the numerical homogenization of PDEs</td>
+</tr>
+<tr>
+<td></td>
+<td>We discuss the advantages of using Julia for solving multiscale problems involving partial differential equations (PDEs). Multiscale problems are problems where the coefficients of a PDE oscillate rapidly on a microscopic length scale, but solutions are sought on a much larger, macroscopic domain. Solving multiscale problems requires both a theoretic result, i.e., a homogenization result yielding effective coefficients, as well as numerical solutions of the PDE at the microscopic and the macroscopic length scales. Numerical homogenization of PDEs with stochastic coefficients is especially computationally expensive. Under certain assumptions, effective coefficients can be found, but their calculation involves subtle numerical problems. The computational cost is huge due to the generally large number of stochastic dimensions. Multiscale problems arise in many applications, e.g., in uncertainty quantification, in the rational design of nanoscale sensors, and in the rational design of materials. Our code for the numerical stochastic homogenization of elliptic problems is implemented in Julia. Since multiscale problems pose new numerical problems, it is in any case necessary to develop new numerical codes. Julia is a dynamic language inspired by the Lisp family of languages, it is open-source, and it provides native-code compilation, access to highly optimized linear-algebra routines, support for parallel computing, and a powerful macro system. We describe our experience in using Julia and discuss the advantages of Julia's features in this problem domain.</td>
+</tr>
+<tr>
+<td>5:00- 5:30</td>
+<td>
+<strong>Sheehan Olver</strong> and Alex Townsend: A practical framework for infinite-dimensional linear algebra (<a href="http://arxiv.org/abs/1409.5529">arXiv:1409.5529 [math.NA]</a>)</td>
+</tr>
+<tr>
+<td></td>
+<td>We describe a framework for solving a broad class of infinite-dimensional linear equations, consisting of almost banded operators, which can be used to represent linear ordinary differential equations with general boundary conditions. The framework contains a data structure on which row operations can be performed, allowing for the solution of linear equations by the adaptive QR approach. The algorithm achieves O(nopt) complexity, where nopt is the number of degrees of freedom required to achieve a desired accuracy, which is determined adaptively. In addition, special tensor</td>
 </tr>
 </tbody>
 </table>
 
-<p>a convex optimization modeling framework in Julia.
-Convex.jl translates problems from a user-friendly functional language into an abstract syntax tree 
-describing the problem. This concise representation of the global structure of the problem 
-allows Convex.jl to infer whether the problem complies with the rules of disciplined convex programming (DCP),
-and to pass the problem to a suitable solver. 
-These operations are carried out in Julia using multiple dispatch, 
-which dramatically reduces the time
-required to verify DCP compliance and to parse a problem into conic form.
- 4:00- 4:30 | Joey Huchette, <strong>Miles Lubin</strong> and Cosmin Petra: Parallel algebraic modeling for stochastic optimization (<a href="http://www.mcs.anl.gov/publication/parallel-algebraic-modeling-stochastic-optimization">ANL/MCS-P5181-0814</a>)
-            | We present scalable algebraic modeling software, \verb|StochJuMP|, for stochastic optimization as applied to power grid economic dispatch. It enables the user to express the problem in a high-level algebraic format with minimal boilerplate. StochJuMP allows efficient parallel model instantiation across nodes and efficient data localization. Computational results are presented showing that the model construction is efficient, requiring less than one percent of solve time. StochJuMP is configured with the parallel interior-point solver PIPS-IPM but is sufficiently generic to allow straight forward adaptation to other solvers.
- 4:30- 5:00 | <strong>Clemens Heitzinger</strong> and Gerhard Tulzer: Julia and the numerical homogenization of PDEs
-            | We discuss the advantages of using Julia for solving multiscale
-problems involving partial differential equations (PDEs).
-Multiscale problems are problems where the coefficients of a PDE
-oscillate rapidly on a microscopic length scale, but solutions are
-sought on a much larger, macroscopic domain. Solving multiscale
-problems requires both a theoretic result, i.e., a homogenization
-result yielding effective coefficients, as well as numerical
-solutions of the PDE at the microscopic and the macroscopic length
-scales.</p>
-
-<p>Numerical homogenization of PDEs with stochastic coefficients is
-especially computationally expensive. Under certain assumptions,
-effective coefficients can be found, but their calculation involves
-subtle numerical problems. The computational cost is huge due to
-the generally large number of stochastic dimensions.</p>
-
-<p>Multiscale problems arise in many applications, e.g., in uncertainty
-quantification, in the rational design of nanoscale sensors, and in
-the rational design of materials.</p>
-
-<p>Our code for the numerical stochastic homogenization of elliptic
-problems is implemented in Julia. Since multiscale problems pose
-new numerical problems, it is in any case necessary to develop new
-numerical codes. Julia is a dynamic language inspired by the Lisp
-family of languages, it is open-source, and it provides native-code
-compilation, access to highly optimized linear-algebra routines,
-support for parallel computing, and a powerful macro system. We
-describe our experience in using Julia and discuss the advantages
-of Julia's features in this problem domain.
- 5:00- 5:30 | <strong>Sheehan Olver</strong> and Alex Townsend: A practical framework for infinite-dimensional linear algebra (<a href="http://arxiv.org/abs/1409.5529">arXiv:1409.5529 [math.NA]</a>)
-            | We describe a framework for solving a broad class of infinite-dimensional 
-linear equations, consisting of almost banded 
-operators, which can be used to represent linear ordinary 
-differential equations with general boundary conditions. The 
-framework contains a data structure on which row operations 
-can be performed, allowing for the solution of linear 
-equations by the adaptive QR approach. The algorithm 
-achieves O(nopt) complexity, where nopt is the number of 
-degrees of freedom required to achieve a desired accuracy, 
-which is determined adaptively. In addition, special tensor 
-product equations, such as partial differential equations on 
-rectangles, can be solved by truncating the operator in the 
-y-direction with ny degrees of freedom and using a generalized 
-Schur decomposition to upper triangularize, before applying 
-the adaptive QR approach to the x-direction, requiring 
-O(n2y noptx) 
-operations. The framework is implemented in 
-the ApproxFun package written in the Julia programming 
-language, which achieves highly competitive computational 
-costs by exploiting unique features of Julia.</p>
+<p>product equations, such as partial differential equations on rectangles, can be solved by truncating the operator in the y-direction with ny degrees of freedom and using a generalized Schur decomposition to upper triangularize, before applying the adaptive QR approach to the x-direction, requiring O(n2y noptx) operations. The framework is implemented in the ApproxFun package written in the Julia programming language, which achieves highly competitive computational costs by exploiting unique features of Julia.</p>
 
 <h1>
 <a id="call-for-participation" class="anchor" href="#call-for-participation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call for participation</h1>
