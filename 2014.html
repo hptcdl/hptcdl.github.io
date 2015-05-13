@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="HPTCDL - First Workshop for High Performance Technical Computing in Dynamic Languages : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>HPTCDL - First Workshop for High Performance Technical Computing in Dynamic Languages</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jiahao/hptcdl-sc14">View on GitHub</a>
+
+          <h1 id="project_title">HPTCDL - First Workshop for High Performance Technical Computing in Dynamic Languages</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jiahao/hptcdl-sc14/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jiahao/hptcdl-sc14/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="workshop-date-monday-november-17-2014" class="anchor" href="#workshop-date-monday-november-17-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workshop date: Monday, November 17, 2014</h1>
+
+<p>New Orleans Convention Center, Room 293 (south end of center, above Hall J)</p>
+
+<p><em>Held in conjunction with <a href="http://sc14.supercomputing.org"><strong>SC14: The International Conference on High Performance Computing, Networking, Storage and Analysis</strong></a></em></p>
+
+<p>View the official IEEE conference proceedings here: <a href="http://conferences.computer.org/hptcdl/2014/">http://conferences.computer.org/hptcdl/2014/</a></p>
+
+<h2>
+<a id="workshop-schedule" class="anchor" href="#workshop-schedule" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workshop schedule</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Introduction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9:00- 9:30</td>
+<td>Alan Edelman: High Performance Technical Computing in Dynamic Languages: Past, Present, &amp; Future</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="http://nbviewer.ipython.org/url/math.mit.edu/%7Eedelman/APL.ipynb">(IPython notebook)</a></td>
+</tr>
+<tr>
+<td>9:30-10:00</td>
+<td>Peter Wang: Big Data, Cloud Computing and Other Ways Software Continues to Disappoint</td>
+</tr>
+</tbody>
+</table>
+
+<p>10-10:30   Break</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Parallel computing in dynamic languages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10:30-11:00</td>
+<td>
+<em>CANCELED</em> <strike><strong>Tobias Knopp</strong>: Experimental Multi-threading Support for the Julia Programming Language</strike>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>Julia is a young programming language that is designed for technical computing. Although Julia is dynamically typed it is very fast and usually yields C speed by utilizing a just-in-time compiler. Still, Julia has a simple syntax that is similar to Matlab, which is widely known as an easy-to-use programming environment. While Julia is very versatile and provides asynchronous programming facilities in the form of tasks (coroutines) as well as distributed multi-process parallelism, one missing feature is shared memory multi-threading. In this paper we present our experiment on introducing multi-threading support in the Julia programming environment. While our implementation has some restrictions that have to be taken into account when using threads, the results are promising yielding almost full speedup for perfectly parallelizable tasks.</td>
+</tr>
+<tr>
+<td>11:00-11:30</td>
+<td>
+<strong>James Phillips</strong>, John Stone, Kirby Vandivort, Timothy Armstrong, Justin Wozniak, Michael Wilde and Klaus Schulten: Petascale Tcl with NAMD, VMD, and Swift/T (<a href="http://www.mcs.anl.gov/publication/petascale-tcl-namd-vmd-and-swiftt">ANL/MCS-P5207-1014</a>)</td>
+</tr>
+<tr>
+<td></td>
+<td>Tcl is the original embeddable dynamic language. Introduced in 1990, Tcl has been the foundation of the scripting interface of the popular biomolecular visualization and analysis program VMD since 1995, and was extended to the parallel molecular dynamics program NAMD in 1999. The two programs have between them over 200,000 users who have enjoyed for nearly two decades the stability and flexibility provided by Tcl. VMD users can implement or extend parallel trajectory analysis and movie rendering on thousands of nodes of Blue Waters. NAMD users can implement or extend simulation protocols and multiple-copy algorithms that execute unmodified on any supercomputer without the need to recompile NAMD. We now demonstrate the integration of the Swift/T high performance parallel scripting language to enable high-level data flow programming in NAMD and VMD. This integration is achieved without modification or recompilation of either program as the Turbine execution engine is itself based on Tcl and is dynamically loaded by the interpreter, as is the platform-specific MPI library on which it depends.</td>
+</tr>
+<tr>
+<td>11:30-12:00</td>
+<td>
+<strong>Jiahao Chen</strong> and Alan Edelman: Parallel Prefix Polymorphism Permits Parallelization, Presentation &amp; Proof (<a href="http://arxiv.org/abs/1410.6449">arXiv:1410.6449 [cs.PL]</a>)</td>
+</tr>
+<tr>
+<td></td>
+<td>Polymorphism in programming languages enables code reuse. Here, we show that polymorphism has broad applicability far beyond computations for technical computing: not only can the exact same code can be reused for serial and distributed computing, but code can also be instrumented for visualizing its data flow, and also be used for formal verification of correctness. The ability to reuse a single codebase for all these purposes provides new ways to understand and verify parallel programs.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="http://nbviewer.ipython.org/github/jiahao/ijulia-notebooks/blob/master/2014-08-06-parallel-prefix.ipynb">(IPython notebook)</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>12:00- 1:30 Break</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Data science applications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1:30- 2:30</td>
+<td>Keynote by <strong>George Ostrouchov</strong>: pbdR: A Sustainable Path for Scalable Statistical Computing</td>
+</tr>
+<tr>
+<td></td>
+<td>The pbdR project (<a href="http://r-pbd.org">r-pbd.org</a>) enables R scalability on medium to large distributed platforms. This is achieved by leveraging components of the same high performance computing (HPC) libraries that power many of today's simulation science codes on the world's largest platforms. Selected components of these libraries that are relevant to data analysis are engaged through data structures inside R in a way that usually require no change from current syntax. High-level functions are added to manipulate the data and to simplify distributed programming. Multicore and co-processor capabilities are also available through the HPC libraries and through some other R packages. This talk will describe the pbdR packages, how they engage the HPC libraries, and how they were used in some applications developed so far.</td>
+</tr>
+<tr>
+<td>2:30- 3:00</td>
+<td>Jessica Ray, <strong>Brian Thompson</strong> and Wade Shen: Comparing a High and Low-Level Deep Neural Network Implementation for Automatic Speech Recognition</td>
+</tr>
+<tr>
+<td></td>
+<td>The use of deep neural networks (DNNs) has improved performance in several fields including computer vision, natural language processing, and automatic speech recognition (ASR). The increased use of DNNs in recent years has been largely due to performance afforded by GPUs, as the computational cost of training large networks on a CPU is prohibitive. Many training algorithms are well-suited to the GPU; however, writing hand-optimized GPGPU code is a significant undertaking. More recently, high-level libraries have attempted to simplify GPGPU development by automatically performing tasks such as optimization and code generation. This work utilizes Theano, a high-level Python library, to implement a DNN for the purpose of phone recognition in ASR. Performance is compared against a low-level, hand-optimized C++/CUDA DNN implementation from Kaldi, a popular ASR toolkit. Results show that the DNN implementation in Theano has CPU and GPU runtimes on par with that of Kaldi, while requiring approximately 95% less lines of code.</td>
+</tr>
+</tbody>
+</table>
+
+<p>3:00- 3:30 Break</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Numerical applications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3:30- 4:00</td>
+<td>
+<strong>Madeleine Udell</strong>, Karanveer Mohan, David Zeng, Jenny Hong, Steven Diamond and Stephen Boyd: Convex Optimization in Julia (<a href="http://arxiv.org/abs/1410.4821">arXiv:1410.4821 [math.OC]</a>)</td>
+</tr>
+<tr>
+<td></td>
+<td>This paper describes Convex.jl, a convex optimization modeling framework in Julia. Convex.jl translates problems from a user-friendly functional language into an abstract syntax tree describing the problem. This concise representation of the global structure of the problem allows Convex.jl to infer whether the problem complies with the rules of disciplined convex programming (DCP), and to pass the problem to a suitable solver. These operations are carried out in Julia using multiple dispatch, which dramatically reduces the time required to verify DCP compliance and to parse a problem into conic form.</td>
+</tr>
+<tr>
+<td>4:00- 4:30</td>
+<td>Joey Huchette, <strong>Miles Lubin</strong> and Cosmin Petra: Parallel algebraic modeling for stochastic optimization (<a href="http://www.mcs.anl.gov/publication/parallel-algebraic-modeling-stochastic-optimization">ANL/MCS-P5181-0814</a>)</td>
+</tr>
+<tr>
+<td></td>
+<td>We present scalable algebraic modeling software, StochJuMP, for stochastic optimization as applied to power grid economic dispatch. It enables the user to express the problem in a high-level algebraic format with minimal boilerplate. StochJuMP allows efficient parallel model instantiation across nodes and efficient data localization. Computational results are presented showing that the model construction is efficient, requiring less than one percent of solve time. StochJuMP is configured with the parallel interior-point solver PIPS-IPM but is sufficiently generic to allow straight forward adaptation to other solvers.</td>
+</tr>
+<tr>
+<td>4:30- 5:00</td>
+<td>
+<strong>Clemens Heitzinger</strong> and Gerhard Tulzer: Julia and the numerical homogenization of PDEs</td>
+</tr>
+<tr>
+<td></td>
+<td>We discuss the advantages of using Julia for solving multiscale problems involving partial differential equations (PDEs). Multiscale problems are problems where the coefficients of a PDE oscillate rapidly on a microscopic length scale, but solutions are sought on a much larger, macroscopic domain. Solving multiscale problems requires both a theoretic result, i.e., a homogenization result yielding effective coefficients, as well as numerical solutions of the PDE at the microscopic and the macroscopic length scales. Numerical homogenization of PDEs with stochastic coefficients is especially computationally expensive. Under certain assumptions, effective coefficients can be found, but their calculation involves subtle numerical problems. The computational cost is huge due to the generally large number of stochastic dimensions. Multiscale problems arise in many applications, e.g., in uncertainty quantification, in the rational design of nanoscale sensors, and in the rational design of materials. Our code for the numerical stochastic homogenization of elliptic problems is implemented in Julia. Since multiscale problems pose new numerical problems, it is in any case necessary to develop new numerical codes. Julia is a dynamic language inspired by the Lisp family of languages, it is open-source, and it provides native-code compilation, access to highly optimized linear-algebra routines, support for parallel computing, and a powerful macro system. We describe our experience in using Julia and discuss the advantages of Julia's features in this problem domain.</td>
+</tr>
+<tr>
+<td>5:00- 5:30</td>
+<td>
+<strong>Sheehan Olver</strong> and Alex Townsend: A practical framework for infinite-dimensional linear algebra (<a href="http://arxiv.org/abs/1409.5529">arXiv:1409.5529 [math.NA]</a>)</td>
+</tr>
+<tr>
+<td></td>
+<td>We describe a framework for solving a broad class of infinite-dimensional linear equations, consisting of almost banded operators, which can be used to represent linear ordinary differential equations with general boundary conditions. The framework contains a data structure on which row operations can be performed, allowing for the solution of linear equations by the adaptive QR approach. The algorithm achieves O(nopt) complexity, where nopt is the number of degrees of freedom required to achieve a desired accuracy, which is determined adaptively. In addition, special tensor  product equations, such as partial differential equations on rectangles, can be solved by truncating the operator in the y-direction with ny degrees of freedom and using a generalized Schur decomposition to upper triangularize, before applying the adaptive QR approach to the x-direction, requiring O(n2y noptx) operations. The framework is implemented in the ApproxFun package written in the Julia programming language, which achieves highly competitive computational costs by exploiting unique features of Julia.</td>
+</tr>
+</tbody>
+</table>
+
+<h1>
+<a id="call-for-participation" class="anchor" href="#call-for-participation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call for participation</h1>
+
+<p>Dynamic high-level languages such as <a href="http://julialang.org">Julia</a>, <a href="http://maplesoft.com">Maple®</a>, <a href="http://www.wolfram.com/mathematica">Mathematica®</a>, <a href="http://www.mathworks.com/products/matlab/">MATLAB®</a>, <a href="https://www.gnu.org/software/octave">Octave</a>, <a href="http://python.org">Python</a>/<a href="http://numpy.org">NumPy</a>/<a href="http://scipy.org">SciPy</a>, <a href="http://r-project.org">R</a>, and <a href="http://scilab.org">Scilab</a> are rapidly gaining popularity with computational scientists and engineers. High-level languages offer the advantage of writing legible and expressive code, which facilitate the rapid prototyping of programs for technical computing. However, high-level languages have a reputation for being subperformant and being difficult to deploy scalably on massively parallel architectures such as clusters, cloud servers, and supercomputers. Thus, some scientific developers resort to prototyping in one language and deploying at scale in another, thus incurring the costs associated with reimplementing a scientific code at least twice. This two-language problem is but one example of the technical challenges associated with the use of dynamic languages on massively parallel platforms.</p>
+
+<p>This workshop aims to bring together users, developers, and practitioners of dynamic technical computing languages, regardless of language, affiliation or discipline, to discuss topics of common interest. Disciplines affiliated the broad umbrella of computational science and engineering, such as physical sciences, biological sciences, social sciences, digital humanities, mathematics, statistics, computer science, all share common challenges associated with the implementation of computational models in extant programming languages. Examples of such topics include code performance, the use of abstractions for composability and reusability, the two-language problem, best practices for software development and engineering, and the implications of such code design decisions for applications in visualization, information retrieval and big data analytics. We expect that these challenges are common to researchers and programmers in academia, national laboratories and industry.</p>
+
+<h2>
+<a id="key-dates" class="anchor" href="#key-dates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key dates</h2>
+
+<ul>
+<li>
+<strike><strong>August 18, 2014</strong></strike> <strong>Extended: August 25, 2014</strong>: Paper submission deadline</li>
+<li>
+<strike><strong>September 15, 2014</strong></strike> <strong>Extended: September 22, 2014</strong>: Notification to authors of acceptance</li>
+<li>
+<strong>October 15, 2014</strong>: E-copyright forms and camera-ready papers due</li>
+<li>
+<strong>November 17, 2014</strong>: Workshop</li>
+</ul>
+
+<h2>
+<a id="submission-information" class="anchor" href="#submission-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Submission information</h2>
+
+<p>Please submit a PDF version of your article to our <a href="https://easychair.org/conferences/?conf=hptcdl2014">EasyChair website</a>. We strongly recommend using the <a href="http://www.acm.org/sigs/publications/proceedings-templates">ACM SIGHPC Tighter Alternate style template</a> for submissions. There is no official page limit but we encourage all submissions to be as concise as possible. </p>
+
+<p>The submission deadline has been extended to the end of <strong>Monday, August 25, 2014</strong>.</p>
+
+<h2>
+<a id="organizers" class="anchor" href="#organizers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Organizers</h2>
+
+<ul>
+<li>Jiahao Chen, MIT</li>
+<li>Alan Edelman, MIT</li>
+<li>Wade Shen, MIT Lincoln Labs</li>
+<li>Andy Terrel, Continuum Analytics</li>
+</ul>
+
+<h2>
+<a id="program-committee" class="anchor" href="#program-committee" aria-hidden="true"><span class="octicon octicon-link"></span></a>Program committee</h2>
+
+<ul>
+<li>Douglas Bates, Wisconsin-Madison</li>
+<li>Stephen Boyd, Stanford</li>
+<li>Claude Gomez, Scilab Enterprises</li>
+<li>Ryan Hafen, PNNL</li>
+<li>Tim Holy, WUSTL</li>
+<li>Steven Johnson, MIT</li>
+<li>Michael Kane, Yale</li>
+<li>Dahua Lin, TTIC</li>
+<li>Travis Oliphant, Continuum Analytics</li>
+<li>Duncan Temple Lang, UC Davis</li>
+<li>Juan Pablo Vielma, MIT</li>
+<li>John Myles White, Facebook</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">HPTCDL - First Workshop for High Performance Technical Computing in Dynamic Languages maintained by <a href="https://github.com/jiahao">jiahao</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-142140-7");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
